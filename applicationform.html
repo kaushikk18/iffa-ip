@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IFFA - Register</title>
+    <link rel="stylesheet" type="text/css" href="css/IFFA.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap");
+    </style>
+  </head>
+  <body>
+    <section class="form-header">
+      <nav>
+        <a class="websitename" href="#">Indian Football Fans Association</a>
+        <div class="nav-links">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">About us</a></li>
+            <li><a href="index.html">Fan clubs included</a></li>
+            <li><a href="index.html">Perks</a></li>
+            <li><a href="#form-column2">Join </a></li>
+            <li><a href="#footer">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="form-text-section">
+        <h1>Join the IFFA family!</h1>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="form-row">
+        <div class="form-column" id="form-column1">
+          <h1></h1>
+          <p>
+            Membership of the IFFA is free. Supporter groups, fanzines and
+            websites can join as affiliates or associates . By becoming a member
+            of the IFFA you agree to our fundamental principles as set out in
+            our constitution and member Code of Conduct.
+          </p>
+          <p>
+            These include:<br />
+
+            - Promoting the cause of diversity and opposing all forms of
+            discrimination;<br />
+            - Rejecting violence, both physical and verbal;<br />
+            - Promoting a positive culture of fair play and goodwill between all
+            football supporters
+          </p>
+        </div>
+        <div class="form-column" id="form-column2">
+          <h1>JOIN THE IFFA</h1>
+          <div id="error"></div>
+          <form action="register.php" method="post">
+            <div class="form-element" style="margin-top: 20px">
+              <label for="name">Name</label><br />
+              <input type="text" name="username" id="username" />
+            </div>
+            <div class="form-element">
+              <label for="email">Email</label><br />
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="eg. yourname@gmail.com"
+              />
+            </div>
+
+            <div class="form-element">
+              <label for="password">Password</label><br />
+              <input type="password" name="password" id="password" />
+            </div>
+
+            <div class="form-element">
+              <label for="passwordConfirm">Confirm Password</label><br />
+              <input
+                type="password"
+                name="passwordConfirm"
+                id="passwordConfirm"
+              />
+            </div>
+
+            <div class="form-element">
+              <label for="club">Which fan club do you want to join?</label
+              ><br />
+              <select name="club">
+                <option>Liverpool Fans India</option>
+                <option>Barca Gang India</option>
+                <option>PSG supporters club India</option>
+                <option>Bharath Red devils</option>
+                <option>Madridstas in India</option>
+                <option>Indian Juventus Supporters</option>
+                <option>Chelsea India</option>
+                <option>Jai milan</option>
+                <option>Bharath Spurs Fans</option>
+                <option>Bayern fans India</option>
+              </select>
+            </div>
+            <br />
+            <!-- <div class="form-element">
+              <p style="font-size: 80%">
+                The information you provide in this form will be used by the
+                Football Supporters' Association with regard to your membership.
+                For more information, contact us.
+              </p>
+              <input type="checkbox" name="agree" id="agree" />
+              <label id="agree-p" for="agree">I agree to the above*</label>
+            </div> -->
+
+            <div class="form-element">
+              <input type="submit" id="submitButton" value="SUBMIT" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="footer-row">
+        <div class="footer-column address">
+          <h1>IFFA</h1>
+          <hr />
+          <p>
+            044-22415671<br />
+            reachiffa@gmail.com<br /><br />
+          </p>
+          <p>XYZ street, Gandhi Nagar, Chennai, Tamilnadu</p>
+        </div>
+        <div class="footer-column">
+          <ul class="links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="index.html">About us</a></li>
+            <li><a href="index.html">Fan clubs included</a></li>
+            <li><a href="index.html">Perks</a></li>
+            <li><a href="#form-column2">Join </a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="copyrights">
+      <p>
+        © 2021 Indian Football Fans Association | All rights reserved | Site by
+        Kaushik Ayyanar
+      </p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="IFFA.js"></script>
+  </body>
+</html>

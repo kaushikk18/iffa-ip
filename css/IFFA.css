@@ -1,0 +1,436 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+hr {
+  border-color: #72b0b0;
+  width: 70%;
+}
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(images/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px;
+  padding-top: 10px;
+}
+.websitename {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+  padding-left: 10px;
+  color: #b3acac;
+  margin-left: 5px;
+}
+nav-links {
+  flex: 1;
+  text-align: right;
+  color: white;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  position: relative;
+  padding: 5px 5px;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.nav-links ul li a {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #718891;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover:after {
+  width: 100%;
+}
+
+.text-section {
+  color: white;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-section h1 {
+  font-size: 55px;
+  font-weight: bolder;
+}
+
+#aboutus {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 70px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#aboutus h1 {
+  font-size: 57px;
+  font-weight: 900;
+  color: #939a9a;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+#aboutus h1:hover {
+  color: #394545;
+}
+#aboutus p {
+  font-size: 20px;
+  padding-top: 55px;
+}
+
+#clubsincluded {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#clubsincluded h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #939a9a;
+  margin: 0 auto;
+}
+
+#clubsincluded h1:hover {
+  color: #394545;
+}
+
+.row {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 80%;
+}
+
+.club-col {
+  flex-basis: 31%;
+  background-color: transparent;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.club-col p {
+  padding-top: 10px;
+}
+.club-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  background-color: #ecefef;
+}
+
+.bayern-col:hover {
+  flex-basis: 30%;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  background-color: #ecefef;
+}
+
+.clublogo {
+  height: 200px;
+}
+
+.bayern-row {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  font-size: 80%;
+}
+
+.bayern-col {
+  justify-content: center;
+  flex-basis: 100%;
+  background-color: transparent;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  width: 32%;
+}
+
+.bayerncenter {
+  margin-top: 90px;
+  font-size: 80%;
+  width: 30%;
+}
+
+#perks {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+#perks h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #939a9a;
+  margin: 0 auto;
+}
+
+#perks h1:hover {
+  color: #394545;
+}
+
+.perks-row {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.perks-div {
+  background-color: #363434;
+  color: white;
+  flex-basis: 31%;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 2);
+}
+
+.perks-div + .perks-div {
+  margin-left: 5%;
+}
+
+.perks-div h3 {
+  color: antiquewhite;
+  text-transform: uppercase;
+  text-align: left;
+  text-align: start;
+}
+
+.perks-div p {
+  font-size: 80%;
+}
+
+#footer {
+  background-color: #363434;
+  color: white;
+  height: 40vh;
+  padding: 20px 50px 90px 50px;
+  margin-bottom: 0%;
+}
+
+.footer-row {
+  display: flex;
+}
+
+.footer-column {
+  flex-basis: 48%;
+}
+
+.footer-column hr {
+  border-color: white;
+  margin-left: 0;
+}
+
+.links {
+  padding-left: 400px;
+  padding-top: 70px;
+  font-size: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+}
+.footer-column + .footer-column {
+  margin-left: 2%;
+}
+
+#footer h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.copyrights {
+  color: black;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+.form-header {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(images/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.form-text-section {
+  color: white;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.form-text-section h1 {
+  font-size: 55px;
+  font-weight: bolder;
+  position: relative;
+  bottom: 50px;
+}
+
+#form-intro {
+  margin: 0 auto;
+
+  text-align: center;
+  width: 80%;
+  margin-top: 74px;
+}
+
+#form-intro h1 {
+  font-size: 50px;
+}
+
+.form {
+  height: 190vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(images/bg3.jpg);
+  background-position: center;
+  background-size: 100%;
+}
+
+.form-row {
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.form-column {
+  flex-basis: 48%;
+  padding-top: 60px;
+  padding-left: 50px;
+}
+
+.form-column + .form-column {
+  margin-left: 3%;
+}
+
+#form-column1 {
+  color: white;
+  background-color: #353535;
+  padding: 50px 30px;
+  margin-top: 130px;
+  line-height: 2em;
+  height: 80%;
+}
+
+#form-column2 {
+  background-color: white;
+  margin-top: 70px;
+  padding: 45px 90px;
+}
+
+#form-column2 h1 {
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Teko", sans-serif;
+}
+
+#error {
+  color: red;
+  background-color: #b3acac;
+}
+
+.form-element {
+  margin-bottom: 30px;
+  border-color: coral;
+  font-size: 17px;
+}
+
+.form-element input {
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  height: 50px;
+  margin-top: 10px;
+  padding-left: 10px;
+  background-color: #d6d6d6;
+  border: none;
+}
+
+.form-element select {
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  height: 50px;
+  margin-top: 10px;
+  padding-left: 10px;
+  background-color: #d6d6d6;
+  border: none;
+}
+
+#agree {
+  height: 25px;
+  width: 25px;
+}
+
+#agree-p {
+  font-size: 80%;
+  position: relative;
+  bottom: 6px;
+}
+
+#submitButton {
+  width: 25%;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: sans-serif;
+  background-color: white;
+  border: 3px solid black;
+  transition: 0.25s;
+}
+
+#submitButton:hover {
+  color: white;
+  background-color: black;
+  border: 3px solid white;
+}
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+  .perks-row {
+    flex-direction: column;
+  }
+  .footer-row {
+    flex-direction: column;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+}
