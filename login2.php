@@ -2,7 +2,7 @@
 <?php
 session_start();
 if(isset($_SESSION['username'])){
-  header('location:home.php');
+  header('location: psg.php');
 }
 
 else{
@@ -64,10 +64,12 @@ else{
                         class="form-control form-control-lg"
                       />
                     </div>
-
-                    <p class="small mb-5 pb-lg-2">
+                    <p class="guest-login">
+                  <a href="index.html"> Visit without logging in</a>
+                </p>
+                    <!-- <p class="small mb-5 pb-lg-2">
                       <a class="text-white-50" href="#!">Forgot password?</a>
-                    </p>
+                    </p> -->
 
                     <button
                       class="btn btn-outline-light btn-lg px-5"
@@ -77,9 +79,7 @@ else{
                     </button>
                   </form>
                 </div>
-                <p class="guest-login">
-                  <a href="index.html"> Visit without logging in</a>
-                </p>
+
               </div>
             </div>
           </div>

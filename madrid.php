@@ -100,6 +100,10 @@
         </a>
       </div>
     </div>
+    <form action="email.php" method="post">
+      <input type="text"/>
+      <input type="submit"/>
+    </form>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

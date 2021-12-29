@@ -50,8 +50,8 @@
               alt="First slide"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>line jdjdd</h5>
-              <p>kodsdnkfndkf bkgvi</p>
+              <h5>FCB vs BVB</h5>
+              <p>Marina machans - 9.00 pm - 6/1/2022</p>
               <button class="btn" onclick="confirmregistration()">click me</button>
             </div>
           </div>
@@ -62,8 +62,8 @@
               alt="Second slide"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>line jdjdd</h5>
-              <p>kodsdnkfndkf bkgvi</p>
+              <h5>FCB vs KOLN</h5>
+              <p>Atti square - 10.00 pm - 11/1/2022</p>
               <button class="btn" onclick="confirmregistration()">click me</button>
             </div>
           </div>

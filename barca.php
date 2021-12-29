@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,12 +26,14 @@
       .carousel {
         width: 80%;
         margin: 0% auto;
-        margin-top: 5%;
+        margin-top: 3%;
         margin-bottom: 5%;
       }
     </style>
   </head>
   <body>
+  <?php include 'header.php' ?>
+
     <div id="carousel-div">
       <div
         id="carouselExampleIndicators"
@@ -50,9 +57,12 @@
               alt="First slide"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>line jdjdd</h5>
-              <p>kodsdnkfndkf bkgvi</p>
-              <button class="btn" onclick="confirmregistration()">click me</button>
+            <form action="email.php" method="post">
+              <h5>FCB vs MCI</h5>
+              <p>The hub space - 7.00 pm - 1/1/2022</p>
+              <!-- <button onclick="mailfunc()">click</button> -->
+              <input class="btn enroll-btn"  type="submit" value="Enroll">
+</form>
             </div>
           </div>
           <div class="carousel-item">
@@ -62,8 +72,8 @@
               alt="Second slide"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>line jdjdd</h5>
-              <p>kodsdnkfndkf bkgvi</p>
+              <h5>FCB vs RSO</h5>
+              <p>Work hub chennai - 10.00 pm - 16/1/2022</p>
               <button class="btn" onclick="confirmregistration()">click me</button>
             </div>
           </div>
@@ -74,8 +84,8 @@
               alt="Third slide"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>line jdjdd</h5>
-              <p>kodsdnkfndkf bkgvi</p>
+              <h5>FCB vs ATM</h5>
+              <p>The gameistry - 7.00 pm - 19/1/2022</p>
               <button class="btn" onclick="confirmregistration()" >click me</button>
             </div>
           </div>
@@ -100,6 +110,35 @@
         </a>
       </div>
     </div>
+    <section id="footer">
+      <div class="footer-row">
+        <div class="footer-column address">
+          <h1>IFFA</h1>
+          <hr />
+          <p>
+            044-22415671<br />
+            reachiffa@gmail.com<br /><br />
+          </p>
+          <p>XYZ street, Gandhi Nagar, Chennai, Tamilnadu</p>
+        </div>
+        <div class="footer-column">
+          <ul class="links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#aboutus">About us</a></li>
+            <li><a href="#clubsincluded">Fan clubs included</a></li>
+            <li><a href="#perks">Perks</a></li>
+            <li><a href="logout.php">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="copyrights">
+      <p>
+        © 2021 Indian Football Fans Association | All rights reserved | Site by
+        Kaushik Ayyanar
+      </p>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

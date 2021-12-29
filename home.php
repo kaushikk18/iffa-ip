@@ -33,9 +33,19 @@ $sql = "select * from register where email = '$email' and password = '$password'
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,200;1,300&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .welcomediv{
+        margin-top:2em;
+        margin-left:9.5em;
+      }
+    </style>
 
   </head>
   <body>
+    <div class="welcomediv">
+    <h2>Welcome <?php echo $_SESSION['username'] ?></h2>
+
+    </div>
     <!-- Modal -->
     <div
       class="modal fade"
@@ -82,27 +92,28 @@ $sql = "select * from register where email = '$email' and password = '$password'
       </div>
     </section>
     <?php
-    if ($_SESSION['club']=='Liverpool Fans India') {
-      include 'liverpool.php';
-    } elseif ($_SESSION['club']=='Bharath Spurs Fans') {
-      include 'spurs.php';
-    }elseif ($_SESSION['club']=='Barca Gang India'){
-      include 'barca.php';
-    }elseif ($_SESSION['club']=='PSG supporters club India'){
-      include 'psg.php';
-    }elseif ($_SESSION['club']=='Bharath Red devils'){
-      include 'manu.php';
-    }elseif ($_SESSION['club']=='Madridstas in India'){
-      include 'madrid.php';
-    }elseif ($_SESSION['club']=='Indian Juventus Supporters'){
-      include 'juve.php';
-    }elseif ($_SESSION['club']=='Chelsea India'){
-      include 'chelsea.php';
-    }elseif ($_SESSION['club']=='Jai milan'){
-      include 'milan.php';
-    }else {
-      include 'bayern.php';
-    }
+    // if ($_SESSION['club']=='Liverpool Fans India') {
+    //   include 'liverpool.php';
+    // } elseif ($_SESSION['club']=='Bharath Spurs Fans') {
+    //   include 'spurs.php';
+    // }elseif ($_SESSION['club']=='Barca Gang India'){
+    //   include 'barca.php';
+    // }elseif ($_SESSION['club']=='PSG supporters club India'){
+    //   include 'psg.php';
+    // }elseif ($_SESSION['club']=='Bharath Red devils'){
+    //   include 'manu.php';
+    // }elseif ($_SESSION['club']=='Madridstas in India'){
+    //   include 'madrid.php';
+    // }elseif ($_SESSION['club']=='Indian Juventus Supporters'){
+    //   include 'juve.php';
+    // }elseif ($_SESSION['club']=='Chelsea India'){
+    //   include 'chelsea.php';
+    // }elseif ($_SESSION['club']=='Jai milan'){
+    //   include 'milan.php';
+    // }else {
+    //   include 'bayern.php';
+    // }
+    include 'liverpool.php';
     ?>
     
     
